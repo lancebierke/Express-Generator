@@ -54,7 +54,7 @@ partnerRouter
   //     next();
   // })
   .get((req, res, next) => {
-    Partner.findById(req.params.campsiteId)
+    Partner.findById(req.params.partnerId)
       .then((partner) => {
         res.statusCode = 200;
         res.setHeader("Content-Type", "application/json");
